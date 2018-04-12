@@ -512,6 +512,8 @@ timeVariation <- function(mydata, pollutant = "nox", local.tz = NULL,
     mnth <- as.numeric(format(date, "%m"))
   })
 
+  return(mydata)
+  break
 
   ## y range taking account of expanded uncertainties
   rng <- function(x) {
